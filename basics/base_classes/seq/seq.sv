@@ -1,4 +1,4 @@
-`i7nclude "uvm_macros.svh"
+`include "uvm_macros.svh"
 import uvm_pkg::*;
 
 class my_seq_item extends uvm_sequence_item;
