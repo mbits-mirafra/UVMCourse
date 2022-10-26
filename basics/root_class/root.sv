@@ -8,7 +8,7 @@ class my_comp extends uvm_component;
 
   function  new(string name="my_comp", uvm_component parent);
 
-    super.new(name, parent);
+    super.new(name, null);
     `uvm_info("NEW", "creating my_comp", UVM_LOW)
 
   endfunction
@@ -39,10 +39,13 @@ endclass
 */
 module tb();
 
-  my_comp cp = new("cp",null);
+  my_comp cp;
 
   initial begin
-    cp.display();
+   // uvm_top = cp;
+   
+  cp= new("cp",null);
+    uvm_top.display();
   end
 
 endmodule
