@@ -45,7 +45,7 @@ module tb();
    // uvm_top = cp;
    
   cp= new("cp",null);
-    uvm_top.display();
+    cp.display();
   end
 
 endmodule
