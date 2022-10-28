@@ -1,6 +1,6 @@
-# vsim tb -l top.log -c -do "run -all; exit;" 
-# Start time: 22:25:18 on Oct 26,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim top -l top.log -c -do "run -all;exit" 
+# Start time: 02:18:50 on Oct 27,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -17,8 +17,8 @@
 # //
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg
-# Loading work.Example_sv_unit(fast)
-# Loading work.tb(fast)
+# Loading work.actions_example1_sv_unit(fast)
+# Loading work.top(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
 # run -all
@@ -44,19 +44,39 @@
 # 
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ...
+# UVM_INFO actions_example1.sv(15) @ 0: rpt3 [rpt3] This is information 1
+# UVM_INFO @ 0: rpt3 [rpt3] This is information 2
+# UVM_INFO @ 0: rpt3 [rpt3] This is information 3
+# UVM_INFO @ 0: rpt3 [rpt3] This is information 4
+# UVM_WARNING @ 0: rpt3 [rpt3] Warning Messgae from rpting
+# UVM_ERROR @ 0: rpt3 [rpt3] Error Message from rpting 
 # 
-# UVM_INFO Example.sv(24) @ 1: dk [DILIP] [UVM_NONE]value of d is 12
 # 
-# UVM_INFO Example.sv(28) @ 3: dk [DILIP] [UVM_LOW]value of d is 12
+# UVM_WARNING @ 0: rpt2 [rpt2] Warning Messgae from rpting
+# UVM_ERROR @ 0: rpt2 [rpt2] Error Message from rpting 
 # 
-# UVM_INFO Example.sv(33) @ 6: dk [DILIP] [UVM_MEDIUM]value of d is 12
 # 
-# UVM_INFO Example.sv(37) @ 10: dk [DILIP] [UVM_HIGH]value of d is 12
+# UVM_INFO actions_example1.sv(15) @ 0: rpt1 [rpt1] This is information 1
+# UVM_INFO @ 0: rpt1 [rpt1] This is information 2
+# UVM_INFO @ 0: rpt1 [rpt1] This is information 3
+# UVM_INFO @ 0: rpt1 [rpt1] This is information 4
+# UVM_WARNING @ 0: rpt1 [rpt1] Warning Messgae from rpting
 # 
-# UVM_INFO Example.sv(41) @ 15: dk [DILIP] [UVM_FULL]value of d is 12
+# --- UVM Report Summary ---
 # 
-# UVM_INFO Example.sv(45) @ 21: dk [DILIP] [UVM_DEBUG]value of d is 12
-# 
-#  exit
-# End time: 22:25:23 on Oct 26,2022, Elapsed time: 0:00:05
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    3
+# UVM_ERROR :    2
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [rpt1]     5
+# [rpt2]     6
+# [rpt3]     6
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# End time: 02:18:53 on Oct 27,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0

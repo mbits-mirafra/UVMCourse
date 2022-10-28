@@ -1,5 +1,5 @@
-# vsim top -l top.log -c -do "run -all; exit;" 
-# Start time: 22:26:28 on Oct 26,2022
+# vsim top -l top.log -c -do "run -all;exit" 
+# Start time: 06:42:41 on Oct 27,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,7 +17,7 @@
 # //
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg
-# Loading work.Example_sv_unit(fast)
+# Loading work.actions_example2_sv_unit(fast)
 # Loading work.top(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
@@ -44,18 +44,25 @@
 # 
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ...
+# UVM_INFO actions_example2.sv(15) @ 0: rpt3 [rpt3] This is information 1
+# UVM_INFO @ 0: rpt3 [rpt3] This is information 2
+# UVM_INFO @ 0: rpt3 [rpt3] This is information 3
+# UVM_INFO @ 0: rpt3 [rpt3] This is information 4
+# UVM_WARNING @ 0: rpt3 [rpt3] Warning Messgae from rpting
 # 
-# UVM_INFO Example.sv(10) @ 0: reporter [TOP] verbosity level is uvm none i.e 0
+# --- UVM Report Summary ---
 # 
-# UVM_INFO Example.sv(14) @ 5: reporter [TOP] verbosity level is uvm low i.e 100
-# 
-# UVM_INFO Example.sv(18) @ 10: reporter [TOP] verbosity level is uvm medium i.e 200
-# 
-# UVM_INFO Example.sv(22) @ 15: reporter [TOP] verbosity level is uvm low i.e 100
-# 
-# UVM_INFO Example.sv(26) @ 20: reporter [TOP] verbosity level is uvm low i.e 100
-# 
-# UVM_INFO Example.sv(30) @ 25: reporter [TOP] verbosity level is uvm none i.e 0
-#  exit
-# End time: 22:26:32 on Oct 26,2022, Elapsed time: 0:00:04
+# ** Report counts by severity
+# UVM_INFO :    7
+# UVM_WARNING :    1
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [rpt3]     6
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh(292)
+#    Time: 0 ns  Iteration: 48  Region: /uvm_pkg::uvm_task_phase::execute
+# End time: 06:42:45 on Oct 27,2022, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
