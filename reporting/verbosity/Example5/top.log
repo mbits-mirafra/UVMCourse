@@ -1,6 +1,6 @@
 # vsim tb -l top.log -c -do "run -all; exit;" 
-# Start time: 22:27:51 on Oct 26,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 05:07:44 on Oct 29,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -44,15 +44,15 @@
 # 
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# 
+# To get the Verbosity level value        200
 # UVM_INFO @ 0: reporter [RNTST] Running test ...
 # 
-# [0] 	 Default verbosity level of uvm is 200[UVM_MEDIUM]
+# UVM_INFO Example.sv(31) @ 1: drv [DiRV] verbosity level is uvm none i.e 0
 # 
-# UVM_INFO Example.sv(33) @ 1: drv [DiRV] verbosity level is uvm none i.e 0
+# UVM_INFO Example.sv(35) @ 3: drv [DRV] verbosity level is uvm low i.e 100
 # 
-# UVM_INFO Example.sv(37) @ 3: drv [DRV] verbosity level is uvm low i.e 100
-# 
-# UVM_INFO Example.sv(42) @ 6: drv [DRV] verbosity level is uvm medium i.e 200
+# UVM_INFO Example.sv(40) @ 6: drv [DRV] verbosity level is uvm medium i.e 200
 # 
 # 
 # 
@@ -74,5 +74,5 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 21 ns  Iteration: 54  Instance: /tb
-# End time: 22:27:55 on Oct 26,2022, Elapsed time: 0:00:04
+# End time: 05:07:47 on Oct 29,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0

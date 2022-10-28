@@ -26,8 +26,6 @@ class driver extends uvm_driver;
   //start of test sequence
    phase.raise_objection(this);
   $display("");
-  $display("[%0t] \t Default verbosity level of uvm is %0d[UVM_MEDIUM]",$time,UVM_MEDIUM);
-  $display("");
   #1;
   //The verbosity level lowest then UVM_DEFAULT VERBOSITY will be printed
   `uvm_info("DiRV", "verbosity level is uvm none i.e 0", UVM_NONE); 
@@ -73,10 +71,10 @@ driver drv;
 
    //Here we creating the object, using factory overriding
    drv = driver::type_id::create("drv",null);
-
+$display("");
    //TO KNOW THE UVM_DEFAULT VEROSITY LEVEL
-   void'(drv.get_report_verbosity_level());
-
+  $display("To get the Verbosity level value", drv.get_report_verbosity_level());
+  
   //run tb module
   run_test();
   end:B1
