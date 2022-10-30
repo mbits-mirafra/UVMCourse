@@ -1,6 +1,6 @@
-# vsim tb -l do_macro_sequence_log.log -c -do "run -all;exit;" 
-# Start time: 21:11:30 on Oct 30,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim tb -l macro_stimulus_log.log -c -do "run -all;exit;" 
+# Start time: 21:28:01 on Oct 30,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -17,7 +17,7 @@
 # //
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg
-# Loading work.do_macro_sequence_sv_unit(fast)
+# Loading work.macro_stimulus_sv_unit(fast)
 # Loading work.tb(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
@@ -45,15 +45,15 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test test...
-# UVM_INFO do_macro_sequence.sv(34) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Pre-Body
-# UVM_INFO do_macro_sequence.sv(38) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Body
+# UVM_INFO macro_stimulus.sv(35) @ 0: uvm_test_top.env.a.seqr@@s [Trans1] Trans1 is created
+# UVM_INFO macro_stimulus.sv(37) @ 0: uvm_test_top.env.a.seqr@@s [Trans1] Trans1 is randomize
 # ---------------------------------------------------------------------------
 # Name                           Type         Size  Value                    
 # ---------------------------------------------------------------------------
-# req                            transaction  -     @636                     
-#   a                            integral     4     'hd                      
-#   b                            integral     4     'h8                      
-#   y                            integral     4     'h0                      
+# trans1                         transaction  -     @636                     
+#   a                            integral     4     'h1                      
+#   b                            integral     4     'h9                      
+#   y                            integral     4     'h4                      
 #   begin_time                   time         64    0                        
 #   end_time                     time         64    0                        
 #   depth                        int          32    'd2                      
@@ -61,13 +61,16 @@
 #   parent sequence (full name)  string       25    uvm_test_top.env.a.seqr.s
 #   sequencer                    string       23    uvm_test_top.env.a.seqr  
 # ---------------------------------------------------------------------------
+# UVM_INFO macro_stimulus.sv(40) @ 0: uvm_test_top.env.a.seqr@@s [Trans1] Create , Randomization and send all done for trans1 
+# UVM_INFO macro_stimulus.sv(43) @ 0: uvm_test_top.env.a.seqr@@s [Trans2] Trans2 is created
+# UVM_INFO macro_stimulus.sv(45) @ 0: uvm_test_top.env.a.seqr@@s [Trans] Trans2 is randomize and the send data
 # ---------------------------------------------------------------------------
 # Name                           Type         Size  Value                    
 # ---------------------------------------------------------------------------
-# req                            transaction  -     @643                     
-#   a                            integral     4     'h4                      
+# trans2                         transaction  -     @643                     
+#   a                            integral     4     'hc                      
 #   b                            integral     4     'h6                      
-#   y                            integral     4     'h0                      
+#   y                            integral     4     'h9                      
 #   begin_time                   time         64    0                        
 #   end_time                     time         64    0                        
 #   depth                        int          32    'd2                      
@@ -75,13 +78,14 @@
 #   parent sequence (full name)  string       25    uvm_test_top.env.a.seqr.s
 #   sequencer                    string       23    uvm_test_top.env.a.seqr  
 # ---------------------------------------------------------------------------
+# UVM_INFO macro_stimulus.sv(47) @ 0: uvm_test_top.env.a.seqr@@s [Trans2] using with 
 # ---------------------------------------------------------------------------
 # Name                           Type         Size  Value                    
 # ---------------------------------------------------------------------------
-# req                            transaction  -     @647                     
-#   a                            integral     4     'h4                      
-#   b                            integral     4     'hf                      
-#   y                            integral     4     'h0                      
+# trans2                         transaction  -     @643                     
+#   a                            integral     4     'h2                      
+#   b                            integral     4     'h4                      
+#   y                            integral     4     'h1                      
 #   begin_time                   time         64    0                        
 #   end_time                     time         64    0                        
 #   depth                        int          32    'd2                      
@@ -89,22 +93,24 @@
 #   parent sequence (full name)  string       25    uvm_test_top.env.a.seqr.s
 #   sequencer                    string       23    uvm_test_top.env.a.seqr  
 # ---------------------------------------------------------------------------
-# UVM_INFO do_macro_sequence.sv(50) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Post-Body
+# UVM_INFO macro_stimulus.sv(51) @ 0: uvm_test_top.env.a.seqr@@s [Trans2] Create , randomization and send is done for trans2
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :    7
+# UVM_INFO :   11
 # UVM_WARNING :    0
 # UVM_ERROR :    0
 # UVM_FATAL :    0
 # ** Report counts by id
 # [Questa UVM]     2
 # [RNTST]     1
-# [SEQ1]     3
 # [TEST_DONE]     1
+# [Trans]     1
+# [Trans1]     3
+# [Trans2]     3
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 0 ns  Iteration: 227  Instance: /tb
-# End time: 21:11:34 on Oct 30,2022, Elapsed time: 0:00:04
+# End time: 21:28:03 on Oct 30,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

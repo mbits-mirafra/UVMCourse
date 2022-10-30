@@ -1,0 +1,45 @@
+# vsim tb -l seq-arb_fifo.log -c -do "run -all;exit;" 
+# Start time: 22:40:35 on Oct 30,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-56) Problem with optimized design dependency file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_deps" - file is inconsistent with version property.
+# ** Fatal: (vopt-8) Problem while reading dependency file "_deps".
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib.qdb".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib2_0.qpg".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib2_0.qtl".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib2_0.qdb".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib1_0.qpg".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib1_0.qtl".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib1_0.qdb".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib3_0.qpg".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib3_0.qtl".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib3_0.qdb".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib4_0.qpg".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib4_0.qtl".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-31) Unable to unlink file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt/_lib4_0.qdb".
+# Permission denied. (errno = EACCES)
+# ** Warning: (vopt-133) Unable to remove directory "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/@_opt".
+# Permission denied. (errno = EACCES)
+# ** Error: (vopt-7) Failed to open  file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/_info" in read/write mode.
+# Permission denied. (errno = EACCES)
+# ** Error: (vopt-7) Failed to open info file "/hwetools/work_area/frontend/gopalVamsi_b7/UVM/sequence_arbitration/UVM_SEQ_ARB_FIFO/with_priority/work/_info" in write mode.
+# Permission denied. (errno = EACCES)
+# ** Error: (vopt-3) System call kill() failed.
+# No such process. (errno = ESRCH)
+# ** Error: (vopt-3) System call wait_pid() failed.
+# No child processes. (errno = ECHILD)
+# ** Error: (vopt-1975) vopt failed -- received signal 11.
+# Error loading design
+# End time: 22:40:38 on Oct 30,2022, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
-# vsim tb -l sequence_driver.log -c -do "run -all;exit;" 
-# Start time: 21:10:16 on Oct 30,2022
+# vsim tb -l seq_arb_strict_fifo.log -c -do "run -all;exit;" 
+# Start time: 23:29:58 on Oct 27,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,7 +17,7 @@
 # //
 # Loading sv_std.std
 # Loading mtiUvm.uvm_pkg
-# Loading work.sequence_driver_sv_unit(fast)
+# Loading work.testbench_sv_unit(fast)
 # Loading work.tb(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
@@ -45,38 +45,37 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test test...
-# UVM_INFO sequence_driver.sv(30) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Pre-Body
-# UVM_INFO sequence_driver.sv(35) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Body
-# UVM_INFO sequence_driver.sv(37) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Sequence item is created
-# UVM_INFO sequence_driver.sv(39) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Waiting for the Grant from Driver
-# UVM_INFO sequence_driver.sv(41) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Grant received now randomizing the data
-# -------------------------------
-# Name   Type         Size  Value
-# -------------------------------
-# trans  transaction  -     @636 
-#   a    integral     7     123  
-#   b    integral     4     'hf  
-#   y    integral     4     'h3  
-# -------------------------------
-# UVM_INFO sequence_driver.sv(44) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Randmization done and now sent request to driver
-# UVM_INFO sequence_driver.sv(46) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Waiting for item done response from driver
-# UVM_INFO sequence_driver.sv(48) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] SEQ ended
-# UVM_INFO sequence_driver.sv(52) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Post-Body
+# UVM_INFO sequence.sv(13) @ 0: uvm_test_top.ENV.AGENT.seq@@s[0] [s[0]] SEQUENCE Started
+# UVM_INFO sequence.sv(13) @ 0: uvm_test_top.ENV.AGENT.seq@@s[1] [s[1]] SEQUENCE Started
+# UVM_INFO sequence.sv(13) @ 0: uvm_test_top.ENV.AGENT.seq@@s[2] [s[2]] SEQUENCE Started
+# UVM_INFO sequence.sv(13) @ 0: uvm_test_top.ENV.AGENT.seq@@s[3] [s[3]] SEQUENCE Started
+# UVM_INFO driver.sv(19) @ 0: uvm_test_top.ENV.AGENT.DRV [DRV] a = 10, b = 5
+# UVM_INFO sequence.sv(17) @ 0: uvm_test_top.ENV.AGENT.seq@@s[0] [s[0]] SEQUENCE Ended
+# UVM_INFO driver.sv(19) @ 0: uvm_test_top.ENV.AGENT.DRV [DRV] a = 2, b = 13
+# UVM_INFO sequence.sv(17) @ 0: uvm_test_top.ENV.AGENT.seq@@s[1] [s[1]] SEQUENCE Ended
+# UVM_INFO driver.sv(19) @ 0: uvm_test_top.ENV.AGENT.DRV [DRV] a = 10, b = 12
+# UVM_INFO sequence.sv(17) @ 0: uvm_test_top.ENV.AGENT.seq@@s[2] [s[2]] SEQUENCE Ended
+# UVM_INFO driver.sv(19) @ 0: uvm_test_top.ENV.AGENT.DRV [DRV] a = 12, b = 4
+# UVM_INFO sequence.sv(17) @ 0: uvm_test_top.ENV.AGENT.seq@@s[3] [s[3]] SEQUENCE Ended
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :   13
+# UVM_INFO :   16
 # UVM_WARNING :    0
 # UVM_ERROR :    0
 # UVM_FATAL :    0
 # ** Report counts by id
+# [DRV]     4
 # [Questa UVM]     2
 # [RNTST]     1
-# [SEQ1]     9
 # [TEST_DONE]     1
+# [s[0]]     2
+# [s[1]]     2
+# [s[2]]     2
+# [s[3]]     2
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 0 ns  Iteration: 226  Instance: /tb
-# End time: 21:10:21 on Oct 30,2022, Elapsed time: 0:00:05
+#    Time: 0 ns  Iteration: 245  Instance: /tb
+# End time: 23:30:03 on Oct 27,2022, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
