@@ -1,6 +1,6 @@
 # vsim top -l get_next_log.log -c -do "run -all;exit;" 
-# Start time: 05:35:10 on Oct 31,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 09:53:56 on Oct 31,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -45,15 +45,15 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test test...
-# UVM_INFO driver.sv(20) @ 0: uvm_test_top.e.a.DRV [Driver] Waiting for data from sequencer
+# UVM_INFO driver.sv(18) @ 0: uvm_test_top.e.a.DRV [Driver] Waiting for data from sequencer
 # UVM_INFO sequence.sv(20) @ 0: uvm_test_top.e.a.seqr@@s1 [Sequence] Sequence item is created
 # UVM_INFO sequence.sv(23) @ 0: uvm_test_top.e.a.seqr@@s1 [Sequence] Grant received now randomizing the data
 # UVM_INFO sequence.sv(25) @ 0: uvm_test_top.e.a.seqr@@s1 [Sequence] randomised value, a:6 , b:15
 # UVM_INFO sequence.sv(26) @ 0: uvm_test_top.e.a.seqr@@s1 [Sequence] Randmization done and now sent request to driver
 # UVM_INFO sequence.sv(28) @ 0: uvm_test_top.e.a.seqr@@s1 [Sequence] Waiting for item done response from driver
-# UVM_INFO driver.sv(22) @ 0: uvm_test_top.e.a.DRV [Driver] Start driving data, a : 6 b:15
-# UVM_INFO driver.sv(26) @ 0: uvm_test_top.e.a.DRV [Driver] Finish driving data, a : 6 b:15
-# UVM_INFO driver.sv(20) @ 0: uvm_test_top.e.a.DRV [Driver] Waiting for data from sequencer
+# UVM_INFO driver.sv(23) @ 0: uvm_test_top.e.a.DRV [Driver] Start driving data, a : 6 b:15
+# UVM_INFO driver.sv(28) @ 0: uvm_test_top.e.a.DRV [Driver] Finish driving data, a : 6 b:15
+# UVM_INFO driver.sv(18) @ 0: uvm_test_top.e.a.DRV [Driver] Waiting for data from sequencer
 # UVM_INFO sequence.sv(30) @ 0: uvm_test_top.e.a.seqr@@s1 [Sequence] Ack.recieved from driver,Sequence ended
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # 
@@ -72,5 +72,5 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 0 ns  Iteration: 227  Instance: /top
-# End time: 05:35:14 on Oct 31,2022, Elapsed time: 0:00:04
+# End time: 09:53:59 on Oct 31,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
