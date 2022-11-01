@@ -18,12 +18,10 @@ forever begin
 `uvm_info("Driver", "Waiting for data from sequencer", UVM_NONE);
 
 //get an item from sequencer using get method
-//Instead of get_next_item, here used get(req)
 seq_item_port.get(req);
 `uvm_info("Driver", $sformatf("Start driving data, a : %0d b:%0d", req.a, req.b), UVM_NONE);
 
 //call the put method to send the request item back to sequencer
-//Instead of item_done, here used put(req)
 seq_item_port.put(req);     
 `uvm_info("Driver", $sformatf("Finish driving data, a : %0d b:%0d", req.a, req.b), UVM_NONE);
 
