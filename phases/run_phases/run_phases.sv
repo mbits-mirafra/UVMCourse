@@ -133,14 +133,13 @@ class test extends uvm_test;
  endtask: Post_shut_down_phase
 
 
+ endclass
 
-                                                                                                                                                         endclass
+ module black_squad();
+  initial begin
 
-                                                                                                                                                         module black_squad();
-                                                                                                                                                         initial begin
+  run_test("test");
 
-                                                                                                                                                           run_test("test");
+  end
 
-                                                                                                                                                           end
-
-                                                                                                                                                         endmodule
+ endmodule:black_squad
