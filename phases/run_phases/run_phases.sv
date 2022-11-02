@@ -37,13 +37,6 @@ class test extends uvm_test;
 
 
 
-  /*task run_phase(uvm_phase phase);
-  *       phase.raise_objection(this);
-  *        void'(jhon.randomize());
-  *              jhon.print();  
-  *                    phase.drop_objection(this);
-  *                      endtask: run_phase*/
-
  task pre_reset_phase(uvm_phase phase);
 
    `uvm_info(get_full_name(), {" Inside pre_reset__phase ", get_full_name()}, UVM_LOW);
