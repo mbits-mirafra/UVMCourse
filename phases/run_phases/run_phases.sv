@@ -104,26 +104,26 @@ class test extends uvm_test;
 
 
 
- task  pre_shut_down_phase(uvm_phase phase);
+ task  pre_shutdown_phase(uvm_phase phase);
 
    `uvm_info(get_full_name(), {" Inside Pre_shutdown_phase ", get_full_name()}, UVM_LOW);
 
- endtask: pre_shut_down_phase
+ endtask: pre_shutdown_phase
 
 
- task  shut_down_phase(uvm_phase phase);
-
-   `uvm_info(get_full_name(), {" Inside shutdown_phase ", get_full_name()}, UVM_LOW);
-
- endtask: shut_down_phase
-
-
-
- task  Post_shut_down_phase(uvm_phase phase);
+ task  shutdown_phase(uvm_phase phase);
 
    `uvm_info(get_full_name(), {" Inside shutdown_phase ", get_full_name()}, UVM_LOW);
 
- endtask: Post_shut_down_phase
+ endtask: shutdown_phase
+
+
+
+ task  Post_shutdown_phase(uvm_phase phase);
+
+   `uvm_info(get_full_name(), {" Inside shutdown_phase ", get_full_name()}, UVM_LOW);
+
+ endtask: Post_shutdown_phase
 
 
  endclass
