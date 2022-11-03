@@ -119,11 +119,11 @@ class test extends uvm_test;
 
 
 
- task  Post_shutdown_phase(uvm_phase phase);
+ task  post_shutdown_phase(uvm_phase phase);
 
    `uvm_info(get_full_name(), {" Inside shutdown_phase ", get_full_name()}, UVM_LOW);
 
- endtask: Post_shutdown_phase
+ endtask: post_shutdown_phase
 
 
  endclass
