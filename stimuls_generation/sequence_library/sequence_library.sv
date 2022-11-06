@@ -34,7 +34,7 @@ class sequence1 extends uvm_sequence#(transaction);
       `uvm_info("SEQ1","SEQ1_Started",UVM_MEDIUM); 
       start_item(req);
       assert(req.randomize());
-      req.print(uvm_default_tree_printer);
+     // req.print(uvm_default_tree_printer);
       finish_item(req);
       `uvm_info("SEQ1","SEQ1_Ended",UVM_MEDIUM); 
   endtask
@@ -54,7 +54,7 @@ class sequence2 extends uvm_sequence#(transaction);
       `uvm_info("SEQ2","SEQ2_Started",UVM_MEDIUM); 
       start_item(req);
       assert(req.randomize());
-      req.print(uvm_default_tree_printer);
+      //req.print(uvm_default_tree_printer);
       finish_item(req);
       `uvm_info("SEQ2","SEQ2_Ended",UVM_MEDIUM); 
   endtask
@@ -154,29 +154,35 @@ class test extends uvm_test;
     s2=sequence2::type_id::create("s2");
   endfunction
 
-  virtual task run_phase(uvm_phase phase);
+  task main_phase(uvm_phase phase);
     phase.raise_objection(this);
     /*env.a.seqr.set_arbitration(SEQ_ARB_STRICT_FIFO);
     fork
     s1.start(env.a.seqr,null,200);
     s2.start(env.a.seqr,null,100);
     join*/
-    s1.start(env.a.seqr);
-    s2.start(env.a.seqr);
+    //s1.start(env.a.seqr);
+    //s2.start(env.a.seqr);
+    //seq_lib.start(env.a.seqr);
     phase.drop_objection(this);
-  endtask
    
-  virtual task configure_phase(uvm_phase phase);
+  endtask
+  task configure_phase(uvm_phase phase);
+  
     super.configure_phase(phase);
     `uvm_info("config","add seq to lib",UVM_MEDIUM); 
     seq_lib.selection_mode=UVM_SEQ_LIB_RANDC;
-    seq_lib.min_random_count=1;
-    seq_lib.max_random_count=3;
+    seq_lib.min_random_count=5;
+    seq_lib.max_random_count=14;
 
     seq_lib.add_typewide_sequence(s1.get_type());
     seq_lib.add_typewide_sequence(s2.get_type());
     seq_lib.init_sequence_library();
   endtask
+  function void start_of_simulation_phase(uvm_phase phase);
+    super.start_of_simulation_phase(phase);
+    uvm_config_db#(uvm_sequence_base)::set(this,"env.a.seqr.main_phase","default_sequence",seq_lib);
+  endfunction
 endclass
 
 module tb;

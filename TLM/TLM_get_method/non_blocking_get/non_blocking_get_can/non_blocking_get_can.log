@@ -1,6 +1,6 @@
 # vsim mod -l non_blocking_get_can.log -c -do "run -all;exit;" 
-# Start time: 00:30:01 on Nov 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 00:56:36 on Nov 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -106,5 +106,5 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 120 ns  Iteration: 55  Instance: /mod
-# End time: 00:30:03 on Nov 07,2022, Elapsed time: 0:00:02
+# End time: 00:56:41 on Nov 07,2022, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0

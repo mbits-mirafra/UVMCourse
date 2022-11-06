@@ -1,6 +1,6 @@
 # vsim tb -l port_port_imp.log -c -do "run -all;exit;" 
-# Start time: 11:05:22 on Nov 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 02:05:55 on Nov 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -77,5 +77,5 @@
 # [UVMTOP]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 0 ns  Iteration: 220  Instance: /tb
-# End time: 11:05:24 on Nov 06,2022, Elapsed time: 0:00:02
+# End time: 02:05:58 on Nov 07,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
