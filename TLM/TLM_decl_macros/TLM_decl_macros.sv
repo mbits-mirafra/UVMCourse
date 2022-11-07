@@ -43,13 +43,16 @@ send=new("send",this);
 endfunction
 
 virtual task run_phase(uvm_phase phase);
+phase.raise_objection(this);
 repeat(2) begin
+
   pkt=packet::type_id::create("pkt");
   assert(pkt.randomize());
   `uvm_info("prodA", "packet sent to consumer", UVM_LOW)
   pkt.print();
   send.put(pkt);
 end
+phase.drop_objection(this);
 endtask
 endclass
 
@@ -71,13 +74,16 @@ send=new("send",this);
 endfunction
 
 virtual task run_phase(uvm_phase phase);
+phase.raise_objection(this);
 repeat(2) begin
   pkt=packet::type_id::create("pkt");
+#1;
   assert(pkt.randomize());
   `uvm_info("prodB", "packet sent to consumer", UVM_LOW)
   pkt.print();
   send.put(pkt);
 end
+phase.drop_objection(this);
 endtask
 endclass
 

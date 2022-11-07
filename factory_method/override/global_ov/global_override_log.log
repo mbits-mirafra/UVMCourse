@@ -1,6 +1,6 @@
 # vsim top -l global_override_log.log -c -do "run -all;exit;" 
-# Start time: 01:58:41 on Oct 26,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:01:46 on Nov 03,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -115,5 +115,5 @@
 #   a   integral    32    'h9  
 # -----------------------------
 # exit
-# End time: 01:58:43 on Oct 26,2022, Elapsed time: 0:00:02
+# End time: 22:01:50 on Nov 03,2022, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0

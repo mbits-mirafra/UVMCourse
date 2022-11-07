@@ -1,6 +1,6 @@
 # vsim tb -l TLM_decl_macros_log.log -c -do "run -all;exit;" 
-# Start time: 01:01:28 on Nov 07,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 00:23:04 on Nov 08,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -45,7 +45,43 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test test...
-# UVM_INFO TLM_decl_macros.sv(77) @ 0: uvm_test_top.e.pB [prodB] packet sent to consumer
+# UVM_INFO TLM_decl_macros.sv(51) @ 0: uvm_test_top.e.pA [prodA] packet sent to consumer
+# ---------------------------
+# Name  Type      Size  Value
+# ---------------------------
+# pkt   packet    -     @537 
+#   a   integral  4     'h9  
+#   b   integral  4     'h0  
+#   c   integral  1     'h0  
+# ---------------------------
+# UVM_INFO TLM_decl_macros.sv(112) @ 0: uvm_test_top.e.c [CONS] packet received from put_1
+# ---------------------------
+# Name  Type      Size  Value
+# ---------------------------
+# pkt   packet    -     @537 
+#   a   integral  4     'h9  
+#   b   integral  4     'h0  
+#   c   integral  1     'h0  
+# ---------------------------
+# UVM_INFO TLM_decl_macros.sv(51) @ 0: uvm_test_top.e.pA [prodA] packet sent to consumer
+# ---------------------------
+# Name  Type      Size  Value
+# ---------------------------
+# pkt   packet    -     @541 
+#   a   integral  4     'h7  
+#   b   integral  4     'hc  
+#   c   integral  1     'h0  
+# ---------------------------
+# UVM_INFO TLM_decl_macros.sv(112) @ 0: uvm_test_top.e.c [CONS] packet received from put_1
+# ---------------------------
+# Name  Type      Size  Value
+# ---------------------------
+# pkt   packet    -     @541 
+#   a   integral  4     'h7  
+#   b   integral  4     'hc  
+#   c   integral  1     'h0  
+# ---------------------------
+# UVM_INFO TLM_decl_macros.sv(82) @ 1: uvm_test_top.e.pB [prodB] packet sent to consumer
 # ---------------------------
 # Name  Type      Size  Value
 # ---------------------------
@@ -54,7 +90,7 @@
 #   b   integral  4     'hd  
 #   c   integral  1     'h0  
 # ---------------------------
-# UVM_INFO TLM_decl_macros.sv(111) @ 0: uvm_test_top.e.c [CONS] packet received from put_2
+# UVM_INFO TLM_decl_macros.sv(117) @ 1: uvm_test_top.e.c [CONS] packet received from put_2
 # ---------------------------
 # Name  Type      Size  Value
 # ---------------------------
@@ -63,65 +99,30 @@
 #   b   integral  4     'hd  
 #   c   integral  1     'h0  
 # ---------------------------
-# UVM_INFO TLM_decl_macros.sv(77) @ 0: uvm_test_top.e.pB [prodB] packet sent to consumer
-# ---------------------------
-# Name  Type      Size  Value
-# ---------------------------
-# pkt   packet    -     @537 
-#   a   integral  4     'h6  
-#   b   integral  4     'h0  
-#   c   integral  1     'h0  
-# ---------------------------
-# UVM_INFO TLM_decl_macros.sv(111) @ 0: uvm_test_top.e.c [CONS] packet received from put_2
-# ---------------------------
-# Name  Type      Size  Value
-# ---------------------------
-# pkt   packet    -     @537 
-#   a   integral  4     'h6  
-#   b   integral  4     'h0  
-#   c   integral  1     'h0  
-# ---------------------------
-# UVM_INFO TLM_decl_macros.sv(49) @ 0: uvm_test_top.e.pA [prodA] packet sent to consumer
-# ---------------------------
-# Name  Type      Size  Value
-# ---------------------------
-# pkt   packet    -     @541 
-#   a   integral  4     'h9  
-#   b   integral  4     'h0  
-#   c   integral  1     'h0  
-# ---------------------------
-# UVM_INFO TLM_decl_macros.sv(106) @ 0: uvm_test_top.e.c [CONS] packet received from put_1
-# ---------------------------
-# Name  Type      Size  Value
-# ---------------------------
-# pkt   packet    -     @541 
-#   a   integral  4     'h9  
-#   b   integral  4     'h0  
-#   c   integral  1     'h0  
-# ---------------------------
-# UVM_INFO TLM_decl_macros.sv(49) @ 0: uvm_test_top.e.pA [prodA] packet sent to consumer
+# UVM_INFO TLM_decl_macros.sv(82) @ 2: uvm_test_top.e.pB [prodB] packet sent to consumer
 # ---------------------------
 # Name  Type      Size  Value
 # ---------------------------
 # pkt   packet    -     @545 
-#   a   integral  4     'h7  
-#   b   integral  4     'hc  
+#   a   integral  4     'h6  
+#   b   integral  4     'h0  
 #   c   integral  1     'h0  
 # ---------------------------
-# UVM_INFO TLM_decl_macros.sv(106) @ 0: uvm_test_top.e.c [CONS] packet received from put_1
+# UVM_INFO TLM_decl_macros.sv(117) @ 2: uvm_test_top.e.c [CONS] packet received from put_2
 # ---------------------------
 # Name  Type      Size  Value
 # ---------------------------
 # pkt   packet    -     @545 
-#   a   integral  4     'h7  
-#   b   integral  4     'hc  
+#   a   integral  4     'h6  
+#   b   integral  4     'h0  
 #   c   integral  1     'h0  
 # ---------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 2: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :   11
+# UVM_INFO :   12
 # UVM_WARNING :    0
 # UVM_ERROR :    0
 # UVM_FATAL :    0
@@ -129,9 +130,10 @@
 # [CONS]     4
 # [Questa UVM]     2
 # [RNTST]     1
+# [TEST_DONE]     1
 # [prodA]     2
 # [prodB]     2
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 0 ns  Iteration: 215  Instance: /tb
-# End time: 01:01:33 on Nov 07,2022, Elapsed time: 0:00:05
+#    Time: 2 ns  Iteration: 56  Instance: /tb
+# End time: 00:23:05 on Nov 08,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

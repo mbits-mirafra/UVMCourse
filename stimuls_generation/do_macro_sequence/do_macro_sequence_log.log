@@ -1,6 +1,6 @@
 # vsim tb -l do_macro_sequence_log.log -c -do "run -all;exit;" 
-# Start time: 21:11:30 on Oct 30,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 03:55:58 on Oct 31,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -51,11 +51,9 @@
 # Name                           Type         Size  Value                    
 # ---------------------------------------------------------------------------
 # req                            transaction  -     @636                     
-#   a                            integral     4     'hd                      
-#   b                            integral     4     'h8                      
+#   a                            integral     4     'h0                      
+#   b                            integral     4     'h0                      
 #   y                            integral     4     'h0                      
-#   begin_time                   time         64    0                        
-#   end_time                     time         64    0                        
 #   depth                        int          32    'd2                      
 #   parent sequence (name)       string       1     s                        
 #   parent sequence (full name)  string       25    uvm_test_top.env.a.seqr.s
@@ -64,12 +62,10 @@
 # ---------------------------------------------------------------------------
 # Name                           Type         Size  Value                    
 # ---------------------------------------------------------------------------
-# req                            transaction  -     @643                     
-#   a                            integral     4     'h4                      
-#   b                            integral     4     'h6                      
+# req                            transaction  -     @640                     
+#   a                            integral     4     'h0                      
+#   b                            integral     4     'h0                      
 #   y                            integral     4     'h0                      
-#   begin_time                   time         64    0                        
-#   end_time                     time         64    0                        
 #   depth                        int          32    'd2                      
 #   parent sequence (name)       string       1     s                        
 #   parent sequence (full name)  string       25    uvm_test_top.env.a.seqr.s
@@ -78,18 +74,16 @@
 # ---------------------------------------------------------------------------
 # Name                           Type         Size  Value                    
 # ---------------------------------------------------------------------------
-# req                            transaction  -     @647                     
-#   a                            integral     4     'h4                      
-#   b                            integral     4     'hf                      
+# req                            transaction  -     @644                     
+#   a                            integral     4     'h0                      
+#   b                            integral     4     'h0                      
 #   y                            integral     4     'h0                      
-#   begin_time                   time         64    0                        
-#   end_time                     time         64    0                        
 #   depth                        int          32    'd2                      
 #   parent sequence (name)       string       1     s                        
 #   parent sequence (full name)  string       25    uvm_test_top.env.a.seqr.s
 #   sequencer                    string       23    uvm_test_top.env.a.seqr  
 # ---------------------------------------------------------------------------
-# UVM_INFO do_macro_sequence.sv(50) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Post-Body
+# UVM_INFO do_macro_sequence.sv(52) @ 0: uvm_test_top.env.a.seqr@@s [SEQ1] Post-Body
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # 
 # --- UVM Report Summary ---
@@ -106,5 +100,5 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 0 ns  Iteration: 227  Instance: /tb
-# End time: 21:11:34 on Oct 30,2022, Elapsed time: 0:00:04
+# End time: 03:56:02 on Oct 31,2022, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0

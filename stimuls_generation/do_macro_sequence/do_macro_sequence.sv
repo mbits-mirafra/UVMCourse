@@ -37,12 +37,14 @@ class sequence1 extends uvm_sequence#(transaction);
   virtual task body();
     `uvm_info("SEQ1","Body",UVM_MEDIUM)
     repeat(1) begin
+fork
       `uvm_do(req)
       req.print(uvm_default_table_printer);
       `uvm_do_with(req,{a==4;b==6;})
       req.print(uvm_default_table_printer);
       `uvm_do_pri(req,5)
       req.print(uvm_default_table_printer);
+    join
     end
   endtask
 
