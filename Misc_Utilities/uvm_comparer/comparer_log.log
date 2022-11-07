@@ -1,0 +1,75 @@
+# vsim tb_top -l comparer_log.log -c -do "run -all;exit;" 
+# Start time: 01:54:16 on Nov 08,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+# UVM_INFO uvm_test.sv(33) @ 0: uvm_test_top [uvm_test_top] Comparing objects
+# UVM_INFO @ 0: reporter [MISCMP] Miscompare for tr_compare.addr: lhs = 'haa67 : rhs = 'hed79
+# UVM_INFO @ 0: reporter [MISCMP] Miscompare for tr_compare.data: lhs = 'hf37d : rhs = 'hef49
+# UVM_ERROR @ 0: reporter [MISCMP] 2 Miscompare(s) for object object2@474 vs. object1@473
+# UVM_ERROR @ 0: reporter [MISCMP] 2 Miscompare(s) for object object2@474 vs. object1@473
+# UVM_INFO uvm_test.sv(37) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 2
+# UVM_INFO @ 0: reporter [MISCMP] Miscompare for int_compare: lhs = 'h2 : rhs = 'h4
+# UVM_INFO @ 0: reporter [MISCMP] Miscompare for string_compare: lhs = "team" : rhs = "kachori"
+# UVM_INFO uvm_test.sv(43) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 4
+# UVM_INFO @ 0: reporter [MISCMP] Miscompare for real compare: lhs = 4.5 : rhs = 6.5
+# UVM_INFO uvm_test.sv(49) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 5
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   12
+# UVM_WARNING :    0
+# UVM_ERROR :    2
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MISCMP]     7
+# [Questa UVM]     2
+# [RNTST]     1
+# [uvm_test_top]     4
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /tb_top
+# End time: 01:54:18 on Nov 08,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
