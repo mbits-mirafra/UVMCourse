@@ -1,0 +1,74 @@
+# vsim top "+UVM_VERBOSITY=UVM_MEDIUM" -l uvm_config_db_set.log -c -do "run -all;quit;" 
+# Start time: 22:41:54 on Nov 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.uvm_config_db_set_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3764) uvm_config_db_set.sv(54): Stand-alone call to function 'get' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_config_db_set_sv_unit::driver File: uvm_config_db_set.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO uvm_config_db_set.sv(133) @ 0: uvm_test_top [test] a = 10
+# UVM_INFO uvm_config_db_set.sv(83) @ 0: uvm_test_top.env [environment] sample value set successfully
+# UVM_INFO uvm_config_db_set.sv(97) @ 0: uvm_test_top.env [environment] my name set successfully
+# UVM_INFO uvm_config_db_set.sv(102) @ 0: uvm_test_top.env [environment] avengers = America
+# UVM_INFO uvm_config_db_set.sv(25) @ 0: uvm_test_top.env.dri [driver] getting value from sample
+# UVM_INFO uvm_config_db_set.sv(26) @ 0: uvm_test_top.env.dri [driver] base_start_value = 30
+# UVM_INFO uvm_config_db_set.sv(55) @ 0: uvm_test_top.env.dri [driver] [dri] name = vinay
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   10
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [driver]     3
+# [environment]     3
+# [test]     1
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# End time: 22:41:58 on Nov 07,2022, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
