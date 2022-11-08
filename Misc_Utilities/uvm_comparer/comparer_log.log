@@ -1,6 +1,6 @@
 # vsim tb_top -l comparer_log.log -c -do "run -all;exit;" 
-# Start time: 01:54:16 on Nov 08,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 00:19:37 on Nov 09,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -45,24 +45,24 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test base_test...
-# UVM_INFO uvm_test.sv(33) @ 0: uvm_test_top [uvm_test_top] Comparing objects
+# UVM_INFO uvm_test.sv(41) @ 0: uvm_test_top [uvm_test_top] Comparing objects
 # UVM_INFO @ 0: reporter [MISCMP] Miscompare for tr_compare.addr: lhs = 'haa67 : rhs = 'hed79
 # UVM_INFO @ 0: reporter [MISCMP] Miscompare for tr_compare.data: lhs = 'hf37d : rhs = 'hef49
-# UVM_ERROR @ 0: reporter [MISCMP] 2 Miscompare(s) for object object2@474 vs. object1@473
-# UVM_ERROR @ 0: reporter [MISCMP] 2 Miscompare(s) for object object2@474 vs. object1@473
-# UVM_INFO uvm_test.sv(37) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 2
+# UVM_INFO @ 0: reporter [MISCMP] 2 Miscompare(s) for object object2@474 vs. object1@473
+# UVM_INFO @ 0: reporter [MISCMP] 2 Miscompare(s) for object object2@474 vs. object1@473
+# UVM_INFO uvm_test.sv(48) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 2
 # UVM_INFO @ 0: reporter [MISCMP] Miscompare for int_compare: lhs = 'h2 : rhs = 'h4
 # UVM_INFO @ 0: reporter [MISCMP] Miscompare for string_compare: lhs = "team" : rhs = "kachori"
-# UVM_INFO uvm_test.sv(43) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 4
+# UVM_INFO uvm_test.sv(57) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 4
 # UVM_INFO @ 0: reporter [MISCMP] Miscompare for real compare: lhs = 4.5 : rhs = 6.5
-# UVM_INFO uvm_test.sv(49) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 5
+# UVM_INFO uvm_test.sv(63) @ 0: uvm_test_top [uvm_test_top] Comparing objects: result = 5
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :   12
+# UVM_INFO :   14
 # UVM_WARNING :    0
-# UVM_ERROR :    2
+# UVM_ERROR :    0
 # UVM_FATAL :    0
 # ** Report counts by id
 # [MISCMP]     7
@@ -71,5 +71,5 @@
 # [uvm_test_top]     4
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 0 ns  Iteration: 215  Instance: /tb_top
-# End time: 01:54:18 on Nov 08,2022, Elapsed time: 0:00:02
+# End time: 00:19:40 on Nov 09,2022, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
