@@ -21,6 +21,9 @@ forever begin
 seq_item_port.get(req);
 `uvm_info("Driver", $sformatf("Start driving data, a : %0d b:%0d", req.a, req.b), UVM_NONE);
 
+#15
+
+`uvm_info("Driver", "Before put method Waiting 15ns ", UVM_NONE);
 //call the put method to send the request item back to sequencer
 seq_item_port.put(req);     
 `uvm_info("Driver", $sformatf("Finish driving data, a : %0d b:%0d", req.a, req.b), UVM_NONE);

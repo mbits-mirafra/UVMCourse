@@ -12,7 +12,7 @@ endfunction
 
 virtual task body();
  begin
-
+repeat(2) begin
 //creating an item 
 
 trans = transaction::type_id::create("trans");
@@ -27,7 +27,10 @@ assert(trans.randomize());
 send_request(trans);
 `uvm_info("Sequence","Waiting for item done response from driver",UVM_NONE);
 wait_for_item_done();
+`uvm_info("Sequence","Before get_response and after wait_for_item_done", UVM_NONE);
+get_response(trans);
 `uvm_info("Sequence","Ack.recieved from driver,Sequence ended",UVM_NONE)
+end
 end
 endtask
 
