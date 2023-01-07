@@ -10,13 +10,16 @@ class test extends uvm_test;
   endfunction
 
   function void build;
-    example Ex = example::type_id::create("Ex");
-    `uvm_info(get_type_name(),$sformatf("Contents:%s",Ex.sprint()),UVM_LOW);
-  endfunction
+      example Ex = example::type_id::create("Ex");
+      string s=Ex.sprint();
+      $display(s);
+   endfunction
 endclass
 
 module uvm_object_sprint_tb;
-initial begin
-  run_test("test");
-end
+   test t;
+   initial begin
+      t=test::type_id::create("t",null);
+      t.build();
+   end
 endmodule
