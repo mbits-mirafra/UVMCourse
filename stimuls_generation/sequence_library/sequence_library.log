@@ -1,6 +1,6 @@
 # vsim tb -l sequence_library.log -c -do "run -all;exit;" 
-# Start time: 23:25:47 on Oct 30,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 12:45:44 on Jan 10,2023
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -45,52 +45,148 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # UVM_INFO @ 0: reporter [RNTST] Running test test...
-# UVM_INFO sequence_library.sv(34) @ 0: uvm_test_top.env.a.seqr@@s1 [SEQ1] SEQ1_Started
-# req: (transaction@646) {
-#   a: 'ha 
-#   b: 'h2 
-#   c: 'h2 
-#   d: 'hd 
-#   y: 'h0 
-#   begin_time: 0 
-#   depth: 'd2 
-#   parent sequence (name): s1 
-#   parent sequence (full name): uvm_test_top.env.a.seqr.s1 
-#   sequencer: uvm_test_top.env.a.seqr 
-# }
-# UVM_INFO sequence_library.sv(39) @ 0: uvm_test_top.env.a.seqr@@s1 [SEQ1] SEQ1_Ended
-# UVM_INFO sequence_library.sv(54) @ 0: uvm_test_top.env.a.seqr@@s2 [SEQ2] SEQ2_Started
-# req: (transaction@653) {
-#   a: 'h9 
-#   b: 'h3 
-#   c: 'hd 
-#   d: 'h7 
-#   y: 'h0 
-#   begin_time: 0 
-#   depth: 'd2 
-#   parent sequence (name): s2 
-#   parent sequence (full name): uvm_test_top.env.a.seqr.s2 
-#   sequencer: uvm_test_top.env.a.seqr 
-# }
-# UVM_INFO sequence_library.sv(59) @ 0: uvm_test_top.env.a.seqr@@s2 [SEQ2] SEQ2_Ended
+# --------------------------------------------------------------------
+# Name                  Type                   Size  Value            
+# --------------------------------------------------------------------
+# seq_lib               my_seq_lib             -     @482             
+#   min_random_count    int unsigned           32    'd5              
+#   max_random_count    int unsigned           32    'd10             
+#   selection_mode      uvm_sequence_lib_mode  32    UVM_SEQ_LIB_RANDC
+#   sequence_count      int unsigned           32    'd10             
+#   typewide_sequences  queue_object_types     0     -                
+#   sequences           queue_object_types     2     -                
+#     [0]               uvm_object_wrapper     45    seq1             
+#     [1]               uvm_object_wrapper     45    seq2             
+#   seqs_distrib        as_int_string          0     -                
+# --------------------------------------------------------------------
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO sequence_library.sv(171) @ 0: uvm_test_top [config] add seq to lib
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequence_library.svh(664) @ 0: uvm_test_top.env.a.seqr@@seq_lib [SEQLIB/START] Starting sequence library my_seq_lib in main phase: 9 iterations in mode UVM_SEQ_LIB_RANDC
+# UVM_INFO sequence_library.sv(50) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:1 [SEQ2] SEQ2_Started
+# req: (transaction@717) {
+#   a: 'h0 
+#   b: 'h7 
+#   c: 'h7 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq2:1 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq2:1 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(55) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:1 [SEQ2] SEQ2_Ended
+# UVM_INFO sequence_library.sv(30) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:2 [SEQ1] SEQ1_Started
+# req: (transaction@726) {
+#   a: 'h1 
+#   b: 'h7 
+#   c: 'h7 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq1:2 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq1:2 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(35) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:2 [SEQ1] SEQ1_Ended
+# UVM_INFO sequence_library.sv(30) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:3 [SEQ1] SEQ1_Started
+# req: (transaction@734) {
+#   a: 'h2 
+#   b: 'h3 
+#   c: 'h5 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq1:3 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq1:3 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(35) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:3 [SEQ1] SEQ1_Ended
+# UVM_INFO sequence_library.sv(50) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:4 [SEQ2] SEQ2_Started
+# req: (transaction@742) {
+#   a: 'h3 
+#   b: 'h0 
+#   c: 'h1 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq2:4 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq2:4 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(55) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:4 [SEQ2] SEQ2_Ended
+# UVM_INFO sequence_library.sv(50) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:5 [SEQ2] SEQ2_Started
+# req: (transaction@750) {
+#   a: 'h0 
+#   b: 'h6 
+#   c: 'h4 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq2:5 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq2:5 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(55) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:5 [SEQ2] SEQ2_Ended
+# UVM_INFO sequence_library.sv(30) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:6 [SEQ1] SEQ1_Started
+# req: (transaction@758) {
+#   a: 'h7 
+#   b: 'h6 
+#   c: 'h0 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq1:6 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq1:6 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(35) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:6 [SEQ1] SEQ1_Ended
+# UVM_INFO sequence_library.sv(30) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:7 [SEQ1] SEQ1_Started
+# req: (transaction@766) {
+#   a: 'h3 
+#   b: 'h3 
+#   c: 'h3 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq1:7 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq1:7 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(35) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq1:7 [SEQ1] SEQ1_Ended
+# UVM_INFO sequence_library.sv(50) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:8 [SEQ2] SEQ2_Started
+# req: (transaction@774) {
+#   a: 'h7 
+#   b: 'h5 
+#   c: 'h7 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq2:8 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq2:8 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(55) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:8 [SEQ2] SEQ2_Ended
+# UVM_INFO sequence_library.sv(50) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:9 [SEQ2] SEQ2_Started
+# req: (transaction@782) {
+#   a: 'h4 
+#   b: 'h4 
+#   c: 'h5 
+#   begin_time: 0 
+#   depth: 'd3 
+#   parent sequence (name): seq2:9 
+#   parent sequence (full name): uvm_test_top.env.a.seqr.seq_lib.seq2:9 
+#   sequencer: uvm_test_top.env.a.seqr 
+# }
+# UVM_INFO sequence_library.sv(55) @ 0: uvm_test_top.env.a.seqr@@seq_lib.seq2:9 [SEQ2] SEQ2_Ended
+# UVM_INFO verilog_src/uvm-1.1d/src/seq/uvm_sequence_library.svh(738) @ 0: uvm_test_top.env.a.seqr@@seq_lib [SEQLIB/END] Ending sequence library in phase main
 # 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
-# UVM_INFO :    9
+# UVM_INFO :   24
 # UVM_WARNING :    0
 # UVM_ERROR :    0
 # UVM_FATAL :    0
 # ** Report counts by id
 # [Questa UVM]     2
 # [RNTST]     1
-# [SEQ1]     2
-# [SEQ2]     2
+# [SEQ1]     8
+# [SEQ2]    10
+# [SEQLIB/END]     1
+# [SEQLIB/START]     1
 # [TEST_DONE]     1
-# [config]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 0 ns  Iteration: 237  Instance: /tb
-# End time: 23:25:51 on Oct 30,2022, Elapsed time: 0:00:04
+#    Time: 0 ns  Iteration: 320  Instance: /tb
+# End time: 12:45:49 on Jan 10,2023, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
