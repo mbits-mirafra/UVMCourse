@@ -81,8 +81,7 @@ class my_seq_lib extends uvm_sequence_library#(transaction);
 endclass
 
 class driver extends uvm_driver#(transaction);
-
-  `uvm_component_utils(driver)
+`uvm_component_utils(driver)
 
   transaction t;
 
@@ -97,9 +96,12 @@ class driver extends uvm_driver#(transaction);
 
   virtual task run_phase(uvm_phase phase);
   forever begin
-    seq_item_port.get_next_item(t);
+
+    
+        seq_item_port.get_next_item(t);
         /////////////////
-    seq_item_port.item_done();
+    
+        seq_item_port.item_done();
   end
 endtask
 
@@ -162,7 +164,8 @@ class test extends uvm_test;
   virtual task run_phase(uvm_phase phase);
     phase.raise_objection(this);
     uvm_config_db#(uvm_sequence_base)::set(this,"env.a.seqr.main_phase","default_sequence",seq_lib);
-   seq_lib.print();
+  
+    seq_lib.print();
     phase.drop_objection(this);
   endtask
 endclass
