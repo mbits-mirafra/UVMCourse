@@ -1,0 +1,102 @@
+# vsim tb -l TLM_Example.log -c -do "run -all;exit;" 
+# Start time: 02:08:07 on Nov 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: environment.sv(16): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test env...
+# UVM_INFO environment.sv(17) @ 0: uvm_test_top [ENV] created 3 packets in total
+# UVM_INFO subcomp1.sv(22) @ 50: uvm_test_top.compA.m_comp1 [subcomp1] Packet sent to ComponentA of TLM FIFO
+# pkt: (packet@634) { a: 'h6  b: 'h6  } 
+# UVM_INFO subcomp1.sv(25) @ 50: uvm_test_top.compA.m_comp1 [subcomp1] done
+# UVM_INFO subcomp2.sv(23) @ 100: uvm_test_top.compB.name [SUBCOMP2] packet recieved from component A
+# pkt: (packet@634) { a: 'h6  b: 'h6  } 
+# UVM_INFO subcomp2.sv(26) @ 100: uvm_test_top.compB.name [SUBCOMP2] subcomp2 is done
+# UVM_INFO subcomp1.sv(22) @ 100: uvm_test_top.compA.m_comp1 [subcomp1] Packet sent to ComponentA of TLM FIFO
+# pkt: (packet@635) { a: 'ha  b: 'h0  } 
+# UVM_INFO subcomp1.sv(25) @ 100: uvm_test_top.compA.m_comp1 [subcomp1] done
+# UVM_INFO subcomp1.sv(22) @ 150: uvm_test_top.compA.m_comp1 [subcomp1] Packet sent to ComponentA of TLM FIFO
+# pkt: (packet@636) { a: 'h8  b: 'h1  } 
+# UVM_INFO subcomp1.sv(25) @ 150: uvm_test_top.compA.m_comp1 [subcomp1] done
+# UVM_INFO componentA.sv(34) @ 160: uvm_test_top.compA [COMPA] component A: TLM FIFO is full!
+# UVM_INFO subcomp3.sv(20) @ 200: uvm_test_top.compB.comp3 [SUBCOMP3] packet recieved from component B of tlm fifo
+# pkt: (packet@634) { a: 'h6  b: 'h6  } 
+# UVM_INFO subcomp3.sv(22) @ 200: uvm_test_top.compB.comp3 [SUBCOMP3] subcomp3 is done
+# UVM_INFO subcomp2.sv(23) @ 200: uvm_test_top.compB.name [SUBCOMP2] packet recieved from component A
+# pkt: (packet@635) { a: 'ha  b: 'h0  } 
+# UVM_INFO subcomp2.sv(26) @ 200: uvm_test_top.compB.name [SUBCOMP2] subcomp2 is done
+# UVM_INFO subcomp2.sv(23) @ 300: uvm_test_top.compB.name [SUBCOMP2] packet recieved from component A
+# pkt: (packet@636) { a: 'h8  b: 'h1  } 
+# UVM_INFO subcomp2.sv(26) @ 300: uvm_test_top.compB.name [SUBCOMP2] subcomp2 is done
+# UVM_INFO componentB.sv(34) @ 300: uvm_test_top.compB [COMPB] COMPONENT B: TLM FIFO is full!
+# UVM_INFO componentB.sv(34) @ 350: uvm_test_top.compB [COMPB] COMPONENT B: TLM FIFO is full!
+# UVM_INFO subcomp3.sv(20) @ 400: uvm_test_top.compB.comp3 [SUBCOMP3] packet recieved from component B of tlm fifo
+# pkt: (packet@635) { a: 'ha  b: 'h0  } 
+# UVM_INFO subcomp3.sv(22) @ 400: uvm_test_top.compB.comp3 [SUBCOMP3] subcomp3 is done
+# UVM_INFO subcomp3.sv(20) @ 600: uvm_test_top.compB.comp3 [SUBCOMP3] packet recieved from component B of tlm fifo
+# pkt: (packet@636) { a: 'h8  b: 'h1  } 
+# UVM_INFO subcomp3.sv(22) @ 600: uvm_test_top.compB.comp3 [SUBCOMP3] subcomp3 is done
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 5000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   26
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COMPA]     1
+# [COMPB]     2
+# [ENV]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [SUBCOMP2]     6
+# [SUBCOMP3]     6
+# [TEST_DONE]     1
+# [subcomp1]     6
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 5 us  Iteration: 54  Instance: /tb
+# End time: 02:08:11 on Nov 07,2022, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
